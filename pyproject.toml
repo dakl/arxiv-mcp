@@ -3,6 +3,7 @@ name = "arxiv-mcp"
 version = "0.1.0"
 description = "MCP server for searching arXiv, retrieving full-text HTML, and downloading PDFs"
 readme = "README.md"
+license = "MIT"
 authors = [
     { name = "Daniel Klevebring", email = "daniel.klevebring@gmail.com" }
 ]
