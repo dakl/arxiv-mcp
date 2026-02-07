@@ -1,5 +1,6 @@
 # arxiv-mcp
 
+[![CI](https://github.com/dakl/arxiv-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/dakl/arxiv-mcp/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 An [MCP](https://modelcontextprotocol.io/) server that exposes arXiv paper search, full-text HTML retrieval, and PDF download as tools. Built with [FastMCP](https://github.com/jlowin/fastmcp) and served over SSE.
