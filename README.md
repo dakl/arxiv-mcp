@@ -23,17 +23,26 @@ uv run arxiv-mcp
 
 The server starts on `http://0.0.0.0:8613`.
 
-Use `--port` to change the port:
+### Options
+
+| Flag | Description | Default |
+|---|---|---|
+| `--port` | Port to listen on | `8613` |
+| `--output-dir` | Default PDF download directory | `./downloads` |
 
 ```bash
-uv run arxiv-mcp --port 9000
+uv run arxiv-mcp --port 9000 --output-dir /tmp/papers
 ```
 
-### Docker
+The `output_dir` parameter on the `download_pdf` tool overrides the server default when provided.
+
+### Docker Compose
 
 ```bash
 docker compose up --build
 ```
+
+Downloads are persisted to `./downloads` on the host via a bind mount.
 
 ## MCP client configuration
 

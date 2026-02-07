@@ -1,0 +1,7 @@
+services:
+  arxiv-mcp:
+    build: .
+    ports:
+      - "8613:8613"
+    volumes:
+      - ./downloads:/app/downloads
