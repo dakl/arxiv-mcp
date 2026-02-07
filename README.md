@@ -1,5 +1,7 @@
 # arxiv-mcp
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 An [MCP](https://modelcontextprotocol.io/) server that exposes arXiv paper search, full-text HTML retrieval, and PDF download as tools. Built with [FastMCP](https://github.com/jlowin/fastmcp) and served over SSE.
 
 ## Tools
@@ -8,7 +10,7 @@ An [MCP](https://modelcontextprotocol.io/) server that exposes arXiv paper searc
 |---|---|
 | `search_papers` | Search arXiv for papers matching a query. Returns titles, authors, abstracts, and links. |
 | `get_paper_html` | Retrieve the full text of an arXiv paper as HTML via [ar5iv](https://ar5iv.org). |
-| `download_pdf` | Download an arXiv paper as PDF to a specified directory. |
+| `download_pdf` | Download an arXiv paper as PDF to a specified directory (default: `./downloads`). |
 
 ## Quickstart
 
@@ -20,6 +22,12 @@ uv run arxiv-mcp
 ```
 
 The server starts on `http://0.0.0.0:8613`.
+
+Use `--port` to change the port:
+
+```bash
+uv run arxiv-mcp --port 9000
+```
 
 ### Docker
 
